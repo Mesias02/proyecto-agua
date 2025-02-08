@@ -28,7 +28,7 @@ const Screen4: React.FC<Screen4Props> = ({ onReturn }) => {
       <View style={styles.row}>
         <Button
           text={showText ? "OCULTAR" : "MOSTRAR"}
-          onClick={toggleText}
+          onPress={toggleText} // Cambiado de onClick a onPress
           style={styles.smallButton}
         />
       </View>
@@ -50,7 +50,7 @@ const Screen4: React.FC<Screen4Props> = ({ onReturn }) => {
       )}
 
       <View style={styles.navigationButtons}>
-        <Button text="REGRESAR" onClick={onReturn} style={styles.navigationButton} />
+        <Button text="REGRESAR" onPress={onReturn} style={styles.navigationButton} /> {/* Cambiado de onClick a onPress */}
       </View>
     </Section>
   );

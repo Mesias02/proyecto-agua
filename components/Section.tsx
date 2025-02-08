@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   sectionContent: {
-    // Aquí no se usa fontSize porque es un View, no un Text
-    // Si necesitas aplicar estilos de texto a los hijos, hazlo en los componentes hijos.
+    
   },
 });

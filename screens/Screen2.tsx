@@ -25,7 +25,7 @@ const Screen2: React.FC<Screen2Props> = ({ onNext, onReturn }) => {
         <Text style={styles.text}>ESTADO DEL AGUA</Text>
         <Button
           text={showEstadoAgua ? "OCULTAR" : "MOSTRAR"}
-          onClick={toggleEstadoAgua}
+          onPress={toggleEstadoAgua} // Cambiado de onClick a onPress
           style={styles.smallButton}
         />
       </View>
@@ -35,7 +35,7 @@ const Screen2: React.FC<Screen2Props> = ({ onNext, onReturn }) => {
         <Text style={styles.text}>POTABILIDAD DEL AGUA</Text>
         <Button
           text={showPotable ? "OCULTAR" : "MOSTRAR"}
-          onClick={togglePotable}
+          onPress={togglePotable} // Cambiado de onClick a onPress
           style={styles.smallButton}
         />
       </View>
@@ -45,15 +45,15 @@ const Screen2: React.FC<Screen2Props> = ({ onNext, onReturn }) => {
         <Text style={styles.text}>AGUA NO POTABLE</Text>
         <Button
           text={showNoPotable ? "OCULTAR" : "MOSTRAR"}
-          onClick={toggleNoPotable}
+          onPress={toggleNoPotable} // Cambiado de onClick a onPress
           style={styles.smallButton}
         />
       </View>
       {showNoPotable && <Text style={styles.detailsText}>El agua no es potable y puede contener contaminantes.</Text>}
       
       <View style={styles.navigationButtons}>
-        <Button text="REGRESAR" onClick={onReturn} style={styles.navigationButton} />
-        <Button text="SIGUIENTE" onClick={onNext} style={styles.navigationButton} />
+        <Button text="REGRESAR" onPress={onReturn} style={styles.navigationButton} /> {/* Cambiado de onClick a onPress */}
+        <Button text="SIGUIENTE" onPress={onNext} style={styles.navigationButton} /> {/* Cambiado de onClick a onPress */}
       </View>
     </Section>
   );
