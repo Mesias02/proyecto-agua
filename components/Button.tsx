@@ -1,18 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import {  } from 'react-native';
-
 
 interface ButtonProps {
   text: string; 
-  onClick: () => void;
+  onClick: () => void;  // Se mantiene 'onClick'
   style?: object; 
 }
 
 export const Button: React.FC<ButtonProps> = ({ text, onClick, style }) => {
   return (
     <TouchableOpacity
-      onPress={onClick} 
+      onPress={onClick}  // Se usa 'onClick' pero internamente pasa a 'onPress' para TouchableOpacity
       style={[styles.button, style]} 
     >
       <Text style={styles.text}>{text}</Text>
