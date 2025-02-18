@@ -14,12 +14,12 @@ const Screen1: React.FC<Screen1Props> = ({ onNext }) => {
     <Section title="BIENVENIDOS" style={styles.section}>
       <View style={styles.imageRow}>
         <Image 
-          source={require('../assets/images/images6.png')} 
+          source={require('../assets/images/images10.png')} 
           style={styles.image} 
           resizeMode="contain"  
         />
         <Image 
-          source={require('../assets/images/images8.jpg')} 
+          source={require('../assets/images/images9.jpg')} 
           style={styles.image} 
           resizeMode="contain" 
         />

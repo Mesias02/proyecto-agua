@@ -7,7 +7,7 @@ export const Header: React.FC = () => {
  
       <Image source={require('../assets/images/logo.jpeg')} style={styles.logo} />
 
-      <Text style={styles.title}>CALIDAD DE AGUA RICAURTE - CUENCA - ECUADOR</Text>
+      <Text style={styles.title}>CALIDAD DE AGUA LAGUNA DE GUABIZHUN - DELEG - CAÑAR - ECUADOR</Text>
 
       <Image source={require('../assets/images/images7.jpg')} style={styles.image7} />
     </View>

@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   sectionContent: {
-    
+    // Aquí puedes agregar estilos adicionales para los contenidos dentro de la sección si es necesario.
   },
 });
